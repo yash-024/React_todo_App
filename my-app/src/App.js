@@ -9,6 +9,9 @@ import Counter from "./Component/Counter";
 import ClassClick from "./Component/ClassClick";
 import ClickbuttonWithFunction from "./Component/ClickbuttonWithFunction";
 import EventBind from "./Component/EventBind";
+import ParentComponent from "./Component/ParentComponent";
+import ListKey from "./Component/ListKey";
+import Keyindex_with_todo_ADD_SORT from "./Component/Keyindex_with_todo_ADD_SORT";
 
 // import { ToastContainer, toast } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
@@ -44,12 +47,17 @@ function App({ todoData }) {
           <br />
         </div>
 
-        {/* <div className="" placeholder="Testing">
-          <EventBind /> 
-          <ClassClick />
-          <ClickbuttonWithFunction />
-          <br />
-        </div> */}
+        <div className="row justify-content-center" placeholder="Testing">
+          <div className="col-md-6 shadow p-4">
+            <Keyindex_with_todo_ADD_SORT />
+            <EventBind />
+            <ClassClick />
+            <ClickbuttonWithFunction />
+            <ParentComponent />
+            <ListKey />
+            <br />
+          </div>
+        </div>
 
         <AddTodo />
         <br />
