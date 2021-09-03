@@ -46,13 +46,13 @@ function App({ props }) {
       {/* <ToastContainer /> */}
       <Header title="Todo List" />
       <div className="container py-5">
-        {/* <div className="">
+        <div className="">
           <Message />
           <Counter />
           <br />
-        </div> */}
+        </div>
 
-        {/* <div className="row justify-content-center" placeholder="Testing">
+        <div className="row justify-content-center" placeholder="Testing">
           <div className="col-md-6 shadow p-4">
             <Keyindex_with_todo_ADD_SORT />
             <EventBind />
@@ -62,7 +62,7 @@ function App({ props }) {
             <ListKey />
             <br />
           </div>
-        </div> */}
+        </div>
 
         <AddTodo todos={""} addTodoData={addTodoData} />
         <br />
