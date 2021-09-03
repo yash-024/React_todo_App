@@ -8,6 +8,10 @@ const AddTodo = (props) => {
   // var count = 1;
   const addTodoData = (e) => {
     e.preventDefault();
+    setName("");
+    setDesc("");
+    // props.name = "";
+    // props.desc = "";
     //   var array;
     //   var fullname = { id: count++, name: name, desc: desc };
     //   let getLocalStorage = localStorage.getItem("todo");
@@ -22,6 +26,7 @@ const AddTodo = (props) => {
     //   localStorage.setItem("todo", JSON.stringify(array));
     //   console.log(fullname);
   };
+
   return (
     <>
       <div className="row justify-content-center">
@@ -34,10 +39,10 @@ const AddTodo = (props) => {
               <input
                 type="text"
                 className="form-control"
-                id="exampleInputEmail1"
+                id="name"
                 aria-describedby="emailHelp"
                 placeholder=""
-                value={props.name}
+                value={name}
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
@@ -46,9 +51,9 @@ const AddTodo = (props) => {
               <input
                 type="text"
                 className="form-control"
-                id="Desc"
+                id="desc"
                 placeholder=""
-                value={props.desc}
+                value={desc}
                 onChange={(e) => setDesc(e.target.value)}
               />
             </div>

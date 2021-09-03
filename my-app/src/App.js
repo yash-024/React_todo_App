@@ -64,7 +64,7 @@ function App({ props }) {
           </div>
         </div> */}
 
-        <AddTodo todos={todos} addTodoData={addTodoData} />
+        <AddTodo todos={""} addTodoData={addTodoData} />
         <br />
         <Todos todos={todos} onDelete={onDelete} />
       </div>
