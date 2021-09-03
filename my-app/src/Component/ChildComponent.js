@@ -5,7 +5,7 @@ function ChildComponent(props) {
     <div>
       <button
         className="btn btn-info"
-        onClick={() => props.greetHandler("Child")}
+        onClick={() => props.greetHandler("Child Name: Yash")}
       >
         Click Parent
       </button>
